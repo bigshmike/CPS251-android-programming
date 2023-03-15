@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Navigation Project</string>
+    <string name="button1Text">Display Image 1</string>
+    <string name="button2Text">Display Image 2</string>
+    <string name="button3Text">Display Image 3</string>
+    <string name="imageView1Title">Image 1</string>
+    <string name="imageView2Title">Image 2</string>
+    <string name="imageView3Title">Image 3</string>
+    <string name="imageView2ContentDescription">Wi-Fi Android Green Robot</string>
+    <string name="imageView1ContentDescription">Android Construction Worker</string>
+    <string name="imageView3ContentDescription">Android Robot holding a Wrench</string>
+    <string name="secondFragmentImageTitlePlaceholderText">Title Goes Here</string>
+    <string name="secondFragmentImageViewContentDescription">Green Android Robot</string>
+</resources>
