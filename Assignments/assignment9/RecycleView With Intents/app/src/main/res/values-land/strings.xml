@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="imageViewContentDescription">Android Robot Image</string>
+    <string name="textViewPlaceholderText">title</string>
+    <string name="detailsTextViewPlaceholderText">details</string>
+</resources>
