@@ -14,7 +14,7 @@ interface ContactDAO {
     @Query("SELECT * FROM contacts WHERE contactNumber = :number")
     fun findContactByNumber(number: String): List<Contact>
 
-    @Query("SELECT * FROM contacts WHERE TRIM(contactName) = :name")
+    @Query("SELECT * FROM contacts WHERE contactName LIKE '%' || :name || '%'")
     fun findContactByName(name: String): List<Contact>
 
     @Query("DELETE FROM contacts WHERE contactNumber = :number")
