@@ -20,8 +20,13 @@ interface ContactDAO {
     @Query("DELETE FROM contacts WHERE contactNumber = :number")
     fun deleteContact(number: String)
 
+    // for app load
     @Query("SELECT * FROM contacts")
     fun getAllContacts(): LiveData<List<Contact>>
+
+    // for empty find result
+    @Query("SELECT * FROM contacts")
+    fun getContacts(): List<Contact>
 
     @Query("SELECT * FROM contacts ORDER BY contactName ASC")
     fun sortContactsAsc(): List<Contact>

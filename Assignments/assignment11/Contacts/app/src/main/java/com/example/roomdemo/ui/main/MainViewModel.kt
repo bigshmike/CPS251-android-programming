@@ -50,4 +50,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         return repository.getContactsSortedByNameDesc()
     }
 
+    fun getContacts() {
+        return repository.getContacts()
+    }
+
 }

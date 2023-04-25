@@ -18,7 +18,7 @@ abstract class ProductRoomDatabase : RoomDatabase() {
                     if (INSTANCE == null) {
                         // Builds a new instance of the database
                         INSTANCE =
-                            Room.databaseBuilder<ProductRoomDatabase>(
+                            Room.databaseBuilder(
                                 context.applicationContext,
                                 ProductRoomDatabase::class.java,
                                 "contacts_database"

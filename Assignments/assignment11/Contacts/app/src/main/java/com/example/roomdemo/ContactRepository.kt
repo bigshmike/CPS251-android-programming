@@ -85,4 +85,16 @@ class ContactRepository(application: Application) {
         coroutineScope.async(Dispatchers.IO) {
             return@async contactDAO?.sortContactsDesc()
         }
+
+    fun getContacts() {
+        coroutineScope.async(Dispatchers.Main) {
+            searchResults.value = asyncSort().await()
+        }
+    }
+
+    private suspend fun asyncSort(): Deferred<List<Contact>?> =
+
+        coroutineScope.async(Dispatchers.IO) {
+            return@async contactDAO?.getContacts()
+        }
 }
